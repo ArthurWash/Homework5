@@ -46,8 +46,7 @@ public class Zerosum extends Thread {
         try {
             t1.join();
             t2.join();
-        } catch (Exception e) {
-        }
+        } catch (Exception e) {System.out.println("Error: " + e.getStackTrace());}
         System.out.println("Final Balance: " + zSum.calories[2]);
     }
 }
